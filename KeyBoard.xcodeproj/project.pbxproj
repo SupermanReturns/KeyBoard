@@ -15,6 +15,9 @@
 		CF3903C7211A941D001DB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3903C6211A941D001DB640 /* main.m */; };
 		CF3903D1211A941E001DB640 /* KeyBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3903D0211A941E001DB640 /* KeyBoardTests.m */; };
 		CF3903DC211A941E001DB640 /* KeyBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3903DB211A941E001DB640 /* KeyBoardUITests.m */; };
+		CF3903EC211A9493001DB640 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3903EB211A9493001DB640 /* KeyboardView.m */; };
+		CF3903EF211A9589001DB640 /* MenuSegView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3903EE211A9589001DB640 /* MenuSegView.m */; };
+		CF3903F2211A95AB001DB640 /* SUTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3903F1211A95AB001DB640 /* SUTextFieldView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CF3903D7211A941E001DB640 /* KeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3903DB211A941E001DB640 /* KeyBoardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardUITests.m; sourceTree = "<group>"; };
 		CF3903DD211A941E001DB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3903EA211A9493001DB640 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		CF3903EB211A9493001DB640 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		CF3903ED211A9589001DB640 /* MenuSegView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuSegView.h; sourceTree = "<group>"; };
+		CF3903EE211A9589001DB640 /* MenuSegView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuSegView.m; sourceTree = "<group>"; };
+		CF3903F0211A95AB001DB640 /* SUTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUTextFieldView.h; sourceTree = "<group>"; };
+		CF3903F1211A95AB001DB640 /* SUTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUTextFieldView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				CF3903B8211A941B001DB640 /* AppDelegate.m */,
 				CF3903BA211A941B001DB640 /* ViewController.h */,
 				CF3903BB211A941B001DB640 /* ViewController.m */,
+				CF3903E9211A9432001DB640 /* TextField */,
 				CF3903BD211A941B001DB640 /* Main.storyboard */,
 				CF3903C0211A941D001DB640 /* Assets.xcassets */,
 				CF3903C2211A941D001DB640 /* LaunchScreen.storyboard */,
@@ -130,6 +140,19 @@
 				CF3903DD211A941E001DB640 /* Info.plist */,
 			);
 			path = KeyBoardUITests;
+			sourceTree = "<group>";
+		};
+		CF3903E9211A9432001DB640 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				CF3903EA211A9493001DB640 /* KeyboardView.h */,
+				CF3903EB211A9493001DB640 /* KeyboardView.m */,
+				CF3903ED211A9589001DB640 /* MenuSegView.h */,
+				CF3903EE211A9589001DB640 /* MenuSegView.m */,
+				CF3903F0211A95AB001DB640 /* SUTextFieldView.h */,
+				CF3903F1211A95AB001DB640 /* SUTextFieldView.m */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3903F2211A95AB001DB640 /* SUTextFieldView.m in Sources */,
 				CF3903BC211A941B001DB640 /* ViewController.m in Sources */,
+				CF3903EC211A9493001DB640 /* KeyboardView.m in Sources */,
 				CF3903C7211A941D001DB640 /* main.m in Sources */,
+				CF3903EF211A9589001DB640 /* MenuSegView.m in Sources */,
 				CF3903B9211A941B001DB640 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = KeyBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = KeyBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
