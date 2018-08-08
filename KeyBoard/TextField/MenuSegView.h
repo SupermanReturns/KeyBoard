@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol MenuSegViewDelegate <NSObject>
+
+@optional
+-(void)clickButton :(NSInteger)clickIndex;
+
+@end
 
 @interface MenuSegView : UIView
+{
+    NSInteger currentIndex;
+    NSArray *_titleArray;
+}
+
+@property(nonatomic,assign) id <MenuSegViewDelegate> delegate;
+-(id)initWithFrame : (CGRect)frame  TitleArray :(NSArray *)titleArray;
+-(void)clickButton:(int)scrollIndex;
 
 @end
