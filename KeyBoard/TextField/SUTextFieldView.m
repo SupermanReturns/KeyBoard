@@ -68,6 +68,7 @@
         toolView.delegate = self;
         toolView.backgroundColor = [UIColor whiteColor];
         self.inputAccessoryView = toolView;
+        
         UIView *toplineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, 0.6)];
         toplineView.backgroundColor = DeleteBtnGrayColor;
         [toolView addSubview:toplineView];
@@ -118,6 +119,7 @@
         [self.keyBgBoardView addSubview:_otherKeyboardView];
     }
 }
+
 #pragma mark LGKeyboardViewDelegate 输入数字字母
 -(void)inputKeyboard :(NSString *)inputString
 {

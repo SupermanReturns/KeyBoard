@@ -81,7 +81,6 @@
     [self.textField resignFirstResponder];
     //   NSLog(@"输入文字为：%@",self.textField.text);
     [self.phoneTextField resignFirstResponder];
-
 }
 
 - (void)didReceiveMemoryWarning {
