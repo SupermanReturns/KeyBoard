@@ -126,19 +126,7 @@
     if (self.text.length>19) { //限制输入20位
         return;
     }
-    //    NSString *inputStr = inputString;
-    //    NSString *pattern = @"^[a-zA-Z0-9~!@#$%^&*_]";
-    //
-    //    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
-    //    BOOL iscaninput = [predicate evaluateWithObject:inputStr];
-    //
-    //    if (iscaninput) {
-    //
-    //       [self insertText:inputString];
-    //
-    //    }else{
-    //      //  NSLog(@"不允许输入的字符");
-    //    }
+
     [self insertText:inputString];
 }
 #pragma mark 删除按钮事件

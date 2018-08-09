@@ -41,12 +41,7 @@
                 [topButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             }
             
-            //            //添加分割线
-            //            if (i != 0) {
-            //                UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(KscreenWidth/3*i, 0, 0.7, self.frame.size.height)];
-            //                lineView.backgroundColor = LineGrayColor;
-            //                [self addSubview:lineView];
-            //            }
+     
             
         }
     }
